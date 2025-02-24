@@ -1,10 +1,11 @@
 import type { ComponentProps } from 'react'
 
+/* 
 interface InputProps extends ComponentProps<'input'> {
 	error?: boolean
 }
 
-/* export function Input({ error, ...props }: InputProps) {
+export function Input({ error, ...props }: InputProps) {
     return (
         <div
             data-error={error} 
