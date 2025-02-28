@@ -10,7 +10,6 @@ interface InvitePageProps {
 	}>
 }
 
-
 export default async function InvitePage(props: InvitePageProps) {
 
 	const { subscriberId } = await props.params
@@ -43,7 +42,7 @@ export default async function InvitePage(props: InvitePageProps) {
 
 						<InviteLinkInput inviteLink={inviteLink} />
 
-						<Stats />
+						<Stats subscriberId={subscriberId} />
 					</div>
 				</div>
 			</div>
